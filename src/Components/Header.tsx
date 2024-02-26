@@ -21,12 +21,12 @@ const Header = () => {
           <div className="sm:ms-5 flex-1  ">
             <a className="btn btn-ghost text-xl">daisyUI</a>
           </div>
-          <div className=" sm:hidden md:hidden  lg:flex lg:gap-20 lg:text-3xl lg:font-serif ">
+          <div className=" sm:hidden   lg:flex lg:gap-20 lg:text-3xl lg:font-serif ">
             {
               Navbar.map((item)=>(
-                <ul key={item?.id_}>
+                <ul key={item?.id_} className="">
                   <Link href={item?.href} >
-                  <li className={` bg-yellow-400  shadow-2xl shadow-slate-800 rounded-lg px-3 ${item?.href === pathname && "shadow-inner shadow-yellow-200 text-white "}`}>
+                  <li className={`  bg-yellow-400  shadow-2xl shadow-slate-800 rounded-lg px-3 ${item?.href === pathname && "shadow-inner shadow-yellow-200 text-white "}`}>
                     {item?.title}
                   </li>
                   </Link>
