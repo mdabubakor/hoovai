@@ -21,7 +21,7 @@ const Header = () => {
           <div className="sm:ms-5 flex-1  ">
             <a className="btn btn-ghost text-xl">daisyUI</a>
           </div>
-          <div className=" sm:hidden md:hidden  lg:flex gap-20 text-3xl font-serif ">
+          <div className=" sm:hidden md:hidden  lg:flex lg:gap-20 lg:text-3xl lg:font-serif ">
             {
               Navbar.map((item)=>(
                 <ul key={item?.id_}>
