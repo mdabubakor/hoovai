@@ -23,7 +23,7 @@ const Header = () => {
           </div>
           <div className=" sm:hidden   lg:flex lg:gap-20 lg:text-3xl lg:font-serif ">
             {
-       <div className="  lg:flex lg:gap-10 text-2xl   ">
+       <div className=" sm:hidden lg:flex lg:gap-10 text-2xl   ">
        {Navbar.map((item)=>(
          <ul key={item?.id_} className="bg-yellow-200 shadow-2xl shadow-slate-600  rounded-lg  ">
            <Link href={item?.href} className="">
