@@ -7,12 +7,13 @@ import { IoReorderThree } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
 import { Flamenco } from "next/font/google";
 import { usePathname } from "next/navigation";
+import { Popover } from "@headlessui/react";
 
 const Header = () => {
   const [show, setShow] = useState(false);
   const pathname = usePathname()
   return (
-    <div className="  ">
+    <Popover className="  ">
       <Container className=" ">
         <div className="navbar bg-base-100 flex items-center justify-between h-20">
           <div className="flex-none">
@@ -21,13 +22,13 @@ const Header = () => {
           <div className="sm:ms-5 flex-1  ">
             <a className="btn btn-ghost text-xl">daisyUI</a>
           </div>
-          <div className=" sm:hidden   lg:flex lg:gap-20 lg:text-3xl lg:font-serif ">
+          <div className="  ">
             {
-       <div className=" sm:hidden lg:flex lg:gap-10 text-2xl   ">
+       <div className="sm:hidden md:flex gap-10 text-2xl md:gap-4  ">
        {Navbar.map((item)=>(
-         <ul key={item?.id_} className="bg-yellow-200 shadow-2xl shadow-slate-600  rounded-lg  ">
-           <Link href={item?.href} className="">
-             <li className={` ps-3 ${item?.href === pathname && " shadow-inner bg-white shadow-yellow-400 rounded-xl  font-serif px-5 " }`}>
+         <ul key={item?.id_} className="  bg-yellow-200 hadow-2xl shadow-slate-600  rounded-lg  ">
+           <Link href={item?.href} className="hidden sm:block">
+             <li className={` ${item?.href === pathname && ` shadow-inner bg-white shadow-yellow-400 rounded-xl  font-serif px-5  ` }`}>
                {item?.title}
              </li>
            </Link>
@@ -60,7 +61,7 @@ const Header = () => {
        
         </div>
       </Container>
-    </div>
+    </Popover>
   );
 };
 
