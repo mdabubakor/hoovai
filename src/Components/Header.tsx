@@ -20,7 +20,7 @@ const Header = () => {
             <button className="btn btn-square btn-ghost"></button>
           </div>
           <div className="sm:ms-5 flex-1  ">
-            <a className="btn btn-ghost text-xl">daisyUI</a>
+            <a className="btn btn-ghost text-5xl roboto">AB<span className="text-yellow-300 shadow-inner shadow-yellow-700 px-1 rounded-e-3xl">bio</span></a>
           </div>
           <div className="  ">
             {
