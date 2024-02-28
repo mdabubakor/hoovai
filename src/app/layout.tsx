@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={roboto_init.variable}>
         <Header/>
-        <Banner />
+     
         {children}</body>
     </html>
   );
