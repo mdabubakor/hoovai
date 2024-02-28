@@ -1,12 +1,10 @@
-import About from '@/Components/About'
-import Banner from '@/Components/Banner'
+import Contact from '@/Components/Contact'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-      <About/>
-      
+      <Contact/>
     </div>
   )
 }
