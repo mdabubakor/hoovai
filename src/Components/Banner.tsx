@@ -20,7 +20,7 @@ const Banner = () => {
       <div className="grid items-center justify-center shadow-inner shadow-yellow-500 ">
          <Image src={AB} alt="banner" className="relative "  />
          {/* <div className=" bg-yellow-200 h-40 w-2 ms-40 absolute bottom-[319px] left-24  shadow-inner backdrop-blur-sm   shadow-yellow-700"/> */}
-         <div className=" bg-yellow-300 h-5 sm:w-[75px] sm:top-[580px] sm:left-40 lg:top-[650px] lg:left-[200px]   lg:w-[130px]   absolute   shadow-inner rounded-md  shadow-yellow-700"/>
+         <div className=" bg-yellow-300 h-5 sm:w-[75px] sm:top-[580px] sm:left-40 lg:top-[650px] lg:left-[170px]   lg:w-[130px]   absolute   shadow-inner rounded-md  shadow-yellow-700"/>
          <div className=" bg-yellow-300 h-4 w-[275px] ms-40 shadow-inner shadow-yellow-700 rounded-md "/>
         </div>
         <div className="mt-44 ms-20">
